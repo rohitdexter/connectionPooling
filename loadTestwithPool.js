@@ -2,7 +2,7 @@ const axios = require('axios');
 let averageTimeSum = 0;
 const loadTestWithPoolUsers = async () => {
     try {
-        const driverArray = new Array(65).fill(0)
+        const driverArray = new Array(65).fill(0) //creating 65 users for load testing
         for (const x of driverArray) {
             let fromTime = new Date();
             await axios.get(`http://localhost:3001/`); //On this port pool connection API will be running

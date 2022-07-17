@@ -2,11 +2,11 @@ const expressApp = require('express')();
 const { Pool } = require('pg')
 
 const client = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'connectionPooling',
-    password: 'qwerty@1',
-    port: 5432,
+    user: 'postgres', //never hardcode the credentials directly always use env variables this is for just tutorial purpose 
+    host: 'localhost', //never hardcode the credentials directly always use env variables this is for just tutorial purpose
+    database: 'connectionPooling', //never hardcode the credentials directly always use env variables this is for just tutorial purpose
+    password: 'qwerty@1', //never hardcode the credentials directly always use env variables this is for just tutorial purpose
+    port: 5432, //never hardcode the credentials directly always use env variables this is for just tutorial purpose
     max: 70,
     idleTimeoutMillis: 0,
     connectionTimeoutMillis: 0,

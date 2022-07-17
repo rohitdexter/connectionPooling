@@ -1,7 +1,7 @@
 const axios = require('axios');
 let averageTimeSum = 0;
 const loadTestWithOutPoolUsers = async () => {
-    const driverArray = new Array(65).fill(0)
+    const driverArray = new Array(65).fill(0) //creating 65 users for load testing
     for (const x of driverArray) {
         try {
             let fromTime = new Date();
