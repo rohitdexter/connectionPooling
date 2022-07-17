@@ -60,7 +60,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Connect PostgreSQL Database
 
     $ PGPASSWORD='dbpassword' psql -h 'hostname' -d 'dbname' -U 'username'
-## Install PostgreSQL Database
+## Create Table
 
     $ create table "users"(id serial primary key,name varchar(50) not null);
   
